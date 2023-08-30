@@ -1,9 +1,5 @@
-import { useQuestion } from "../context/QuestionContext";
-
-function Options({ question }) {
-  const { answer, dispatch } = useQuestion();
+function Options({ question, answer, dispatch }) {
   const hasAnswered = answer !== null;
-
   return (
     <div className="options">
       {question.options.map((option, ind) => (

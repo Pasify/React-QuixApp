@@ -1,7 +1,4 @@
-import { useQuestion } from "../context/QuestionContext";
-
-function StartScreen() {
-  const { numQuestions, dispatch } = useQuestion();
+function StartScreen({ numQuestions, dispatch }) {
   return (
     <div className="start">
       <h2>Welcome to the React Quixapp</h2>
